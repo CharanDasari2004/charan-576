@@ -1,0 +1,226 @@
+start day 1 
+
+
+ 1))))use functions with sum and sub and mul and division 
+
+class Mbu{
+    public static  int add(int a,int b){
+        return a+b;
+    }
+    public static int subtract(int a,int b){
+        return a-b;
+    }
+        public static int multiply( int a,int b){
+            return a*b;
+        }
+    public static double division(int a,int b){
+        return a/b;
+    } 
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+    
+    System.out.println(add(num1,num2));
+    System.out.println(subtract(num1,num2));
+    System.out.println(multiply(num1,num2));
+    System.out.println(division(num1,num2));
+    
+}
+}
+
+
+2)) linear search 
+
+
+import java.util.*;                                                                                            
+
+class Mbu{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+            
+        }
+        int k=sc.nextInt();
+        boolean  found=false;
+        for(int i=0;i<n;i++){
+        
+            if(arr[i]==k){
+                System.out.println("found " + i);
+                found=true;
+                break;
+                
+                
+            }
+        }
+        if(!found){
+            System.out.println("not found");
+        }
+    }
+}
+
+cl suma nd average in array 
+cal the how many  even and odd in array 
+ check if array is sorted  in ascending order
+find all duplicates in array 
+remove  all occurences  of a specific element 
+two sum
+
+ 
+import java.util.*;
+class Mbu{
+    public static void main(String args[]){
+     
+        int arr[]={10,20,30,40};
+           int n=arr.length;
+        int sum=0;
+        for(int i=0;i<n;i++){
+            sum+=arr[i];
+            
+            
+        }
+      int average=sum/n;
+        System.out.println("sum :" + sum);
+        System.out.println("average :" + average);
+    }
+}
+
+
+import java.util.*;
+class Mbu{
+    public static void main(String args[]){
+     
+        int arr[]={10,20,30,40};
+           int n=arr.length;
+        int sum=0;
+         double median=0;
+        for(int i=0;i<n;i++){
+            sum= sum+arr[i];
+            
+            
+        }
+      int average=sum/n;
+      Arrays.sort(arr);
+      
+      if(n%2==0){
+          median=(arr[n/2-1] + arr[n/2]) /2.0;
+      }
+      else{
+          median=arr[n/2];
+      }
+      
+        System.out.println("sum :" + sum);
+        System.out.println("average :" + average);
+        System.out.println("median:" + median);
+    }
+}
+
+
+import java.util.*;
+class Mbu{
+    public static void main(String args[]){
+        int arr[]={12,34,67,56,78};
+        int n=arr.length;
+        int evencount=0;
+        int oddcount=0;
+        for(int i=0;i<n;i++){
+            if(arr[i]%2==0){
+                evencount++;
+                
+            }
+            else{
+                oddcount++;
+                
+            
+        }
+        }
+        System.out.println(evencount);
+        System.out.println(oddcount);
+        }
+    }
+
+
+
+
+two sum  bruteforece method..
+
+
+import java.util.*;
+class Mbu{
+    public static int[] twosum(int arr[], int target){
+        int n=arr.length;
+        
+    for(int i=0;i<n;i++){
+        for( int j=i+1;j<n;j++){
+            if(arr[i]+arr[j]==target){
+                return new int[] {i,j};
+            }
+        }
+    }
+    return null;
+    }
+    public static void main(String arags[]){
+        int arr[]={14,5,1,45,6};
+        int target=15;
+        int[] result=twosum(arr,target);
+        if(result!=null){
+            System.out.println(result[0] + " " +result[1]);
+        }
+        else{
+            System.out.println("no such pair is found");
+        }
+    }
+}
+
+
+
+
+optimise method
+
+
+import java.util.HashMap;
+class Mbu{
+    public static int[] twosum(int arr[], int target){
+        int n=arr.length;
+        HashMap<Integer,Integer>map=new HashMap<>();
+        for(int i=0;i<n;i++){
+            int compliment=target- arr[i];
+            if(map.containsKey(compliment)){
+                return new int[]{map.get(compliment),i};
+            }
+        map.put(arr[i],i);
+    }
+    return new int[] {};
+}
+
+
+
+
+    public static void main(String[] args) {
+        int[] arr = {4, 6, 5, 8, 9};
+        int target = 9;
+
+        int[] result =twosum(arr, target);
+
+        if (result.length > 0) {
+            System.out.println("Indices: " + result[0] + " and " + result[1]);
+           
+        } else {
+            System.out.println("No such pair found.");
+        }
+    }
+}
+
+
+
+
+
+     
+
+
+
+
+       
