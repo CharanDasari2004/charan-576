@@ -33,7 +33,7 @@ class Mbu{
 2)) linear search 
 
 
-import java.util.*;                                                                                            
+import java.util.*;                                                                                           binary search  
 
 class Mbu{
     public static void main(String args[]){
@@ -62,12 +62,21 @@ class Mbu{
     }
 }
 
-cl suma nd average in array 
-cal the how many  even and odd in array 
+
+
+cl suma nd average in array                                median  and mean (average ) and mode 
+cal the how many  even and odd in array             take two arrays and then summof the arr1[i] +arrr2[i]     and print tye result
+                    
  check if array is sorted  in ascending order
 find all duplicates in array 
 remove  all occurences  of a specific element 
 two sum
+search insert  position
+valid palindrome
+swap first and last elemenets
+remove zeroes at last 
+
+count vowels and consonats 
 
  
 import java.util.*;
@@ -195,11 +204,7 @@ class Mbu{
     }
     return new int[] {};
 }
-
-
-
-
-    public static void main(String[] args) {
+ public static void main(String[] args) {
         int[] arr = {4, 6, 5, 8, 9};
         int target = 9;
 
@@ -215,10 +220,125 @@ class Mbu{
 }
 
 
-hi
+pb))))remove  all  zeroes at last in array 
 
 
-hlooo
+class Mbu{
+public  void movezeros(int[]arr){
+int left=0;
+for(int right=0;right<arr,length;right++){
+
+if(arr[right]!=0{                                             #  here  left=swap
+                                                                                                   right=nonzero  {refer book once}
+int temp=arr[right];
+arr[right]=arr[left];
+arr[left]=temp;
+left++;
+}
+
+
+
+pb)))))count how many  charaters and  vowels and consoantas in string 
+
+
+import java.util.*;
+class  Mbu{
+public static void main(String []args){
+String str=("we are learning java");
+int count=0;
+int vCount=0;
+int cCount=0;
+str =str.toLowerCase();
+for(int i=0;i<str.length()-1;i++){
+if(str.charAt(i)!=' '){
+count++;
+}
+if(str.charAt(i)=='a' ||   str.charAt(i)=='e' ||   str.charAt(i)=='i' ||   str.charAt(i)=='o' || str.charAt(i)=='u' ) {
+vCount++;
+}
+else if(str.charAt(i)>'a'  && str.charAt(i)<='z'){
+cCount++;
+}
+}
+System.out.println(count);
+System.out.println(vCount);
+System.out.println(cCount);
+}
+}
+
+
+
+pb ))))))) best time to buy  and sellthe price of a stock 
+ 
+ import java.util*;
+class Mbu{
+public static  int maxprofit(int [] prices){
+int i=0;
+int j=1;
+int max_profit=0;
+
+while(j<prices.length){
+if(prices[j]-prices[i]) > max_profit){
+max_profit=prices[j]=prices[i];
+
+}
+if(prices[j] < prices[i]){
+i=j;
+}
+j++;
+}
+return max_profit;
+}
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int prices[]=new int[n];
+for(int i=0;i<n;i++){
+prices[i]=sc.nextInt();
+}
+int profit=maxprofit(prices);
+System.out.println(profit);
+}
+}
+
+
+
+    pb )))))   input is  like       5 2
+                                abdfa                 
+ here is  5 is length of   string  and 2 is  fingd the k th element in the string
+
+
+import java.util.*;
+class Mbu{
+public static void main(String args[] ){
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int k=sc.nextInt();
+sc.nextLine();
+String sc=sc.nextLine();
+System.out.println( str.charAt(n-k));
+}
+} 
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
 
 
 
